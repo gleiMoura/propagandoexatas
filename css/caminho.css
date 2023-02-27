@@ -1,0 +1,59 @@
+.caminho {
+	background-color: #262D37;
+	padding: 30px 10px 0 0;
+	height: 100vh;
+}
+
+.caminho__grid {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.caminho__conteudo {
+	background-color: #348263;
+	width: 30%;
+	height: 290px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.caminho__conteudo p,
+.caminho__conteudo h2 {
+	color: white;
+	text-align: center;
+}
+
+.caminho__texto {
+	width: 100%;
+	height: 85%;
+}
+
+.caminho__conteudo img {
+	border-radius: 50%;
+	width: 30%;
+	display: block;
+	margin: auto;
+	border: 2px solid #348263;
+}
+
+@media(max-width:890px) {
+	.caminho {
+		background-image: none;
+		height: auto;
+	}
+
+	.caminho__texto p {
+		font-size: 1.2rem;
+	}
+
+	.caminho__conteudo {
+		width: 90%;
+		margin-bottom: 200px;
+	}
+
+	.caminho__grid {
+		display: flex;
+		flex-direction: column;
+	}
+}
