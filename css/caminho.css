@@ -1,7 +1,10 @@
 .caminho {
 	background-color: #262D37;
-	padding: 30px 10px 0 0;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-bottom: 100px;
 }
 
 .caminho__grid {
@@ -41,6 +44,7 @@
 	.caminho {
 		background-image: none;
 		height: auto;
+		padding: 10px
 	}
 
 	.caminho__texto p {
