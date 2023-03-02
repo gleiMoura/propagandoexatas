@@ -41,7 +41,7 @@ nav a {
 	color: white;
 	margin: 0px 70px;
 	font-size: 1.5em;
-	
+
 }
 
 nav a:hover {
@@ -61,7 +61,7 @@ h3 a {
 }
 
 p {
-	font-size: 1,6rem;
+	font-size: 1, 6rem;
 }
 
 footer {
@@ -80,7 +80,37 @@ footer {
 	padding-top: 16px;
 }
 
-.link{
+.link {
 	color: red;
 	text-decoration: none;
+}
+
+table {
+	width: 100%;
+    text-align: center;
+    overflow:hidden;
+    border-collapse:separate;
+    border: solid #ccc 1px;
+    -webkit-border-radius: 25px;
+       -moz-border-radius: 25px;
+            border-radius: 25px;
+}
+
+th,
+td {
+	padding: 8px;
+	text-align: center;
+	color: white;
+}
+
+th {
+	background-color: #000;
+}
+
+tr {
+	background-color: #000;
+}
+
+.nao {
+	background-color: #c93939;
 }

@@ -20,8 +20,7 @@
 }
 
 .portfolio__sites{
-	display: grid;
-	grid-template-columns: 500px 500px;
+	width: 100%;
 }
 
 .portfolio__site {
@@ -57,6 +56,21 @@
 .portfolio__site img{
 	width: 320px;
 	height: 180px;
+}
+
+.portfolio__button {
+	width: 50px;
+	height: 25px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.sim {
+	background-color: #348263;
+}
+
+.nao {
+	background-color: #c93939;
 }
 
 @media(max-width:890px) {
