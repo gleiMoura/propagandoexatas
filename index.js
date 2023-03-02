@@ -69,7 +69,7 @@ const clickDay = (day, livre, hour) => {
         return
     } else {
         confirm_order.classList.remove("confirm_order_none");
-        confirm_order_sim.href = "https://wa.me/+5521998199049?text=" + encodeURIComponent(message);
+        confirm_order_sim.href = "https://wa.me/+5521990230279?text=" + encodeURIComponent(message);
     }
 }
 
