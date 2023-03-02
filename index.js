@@ -39,6 +39,7 @@ const createTable = () => {
             bodyTable += `
                     <td>
                         <div class="portfolio__button ${livre}" onclick="clickDay('${diasDaSemana[i]}','${livre}',${j})">
+                            ${j}:00
                         </div>
                     </td>
             `

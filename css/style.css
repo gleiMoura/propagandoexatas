@@ -87,22 +87,31 @@ footer {
 
 table {
 	width: 100%;
-    text-align: center;
-    overflow:hidden;
-    border-collapse:separate;
-    border: solid #ccc 1px;
-    -webkit-border-radius: 25px;
-       -moz-border-radius: 25px;
-            border-radius: 25px;
+	text-align: center;
+	overflow: hidden;
+	border-collapse: separate;
+	border: solid #ccc 1px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
 }
 
 th,
 td {
 	padding: 8px;
 	text-align: center;
+	size: 1, 5em;
 	color: white;
 	width: 100px;
 	height: auto;
+}
+
+@media(max-width:890px) {
+
+	th,
+	td {
+		padding: 4px;
+	}
 }
 
 th {
@@ -113,26 +122,40 @@ tr {
 	background-color: #000;
 }
 
-.confirm_order{
-    width: 300px;
-    height: 100px;
+.confirm_order {
+	width: 300px;
+	height: 100px;
 	padding: 10px;
-    background-color: #348263;
+	background-color: #348263;
 	color: white;
-    position: fixed;
+	position: fixed;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    z-index: 3;
-    border-radius: 20px;
+	z-index: 3;
+	border-radius: 20px;
 	box-shadow: 5px 5px 5px #000;
 	left: calc(45% - 50px);
-
 }
+
+@media(max-width:800px) {
+	.confirm_order {
+		left: calc(25%)
+	}
+}
+
+@media(max-width:500px) {
+	.confirm_order {
+		width: 200px;
+		left: calc(15%)
+	}
+}
+
 .confirm_order_buttons {
 	display: flex;
 }
+
 .confirm_order_buttons div {
 	margin: 20px;
 	background-color: black;
@@ -146,7 +169,6 @@ tr {
 	text-decoration: none;
 }
 
-.confirm_order_none{
-    display: none;
+.confirm_order_none {
+	display: none;
 }
-

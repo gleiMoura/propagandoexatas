@@ -63,6 +63,20 @@
 	height: 30px;
 	border-radius: 10px;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-decoration-style: double;
+}
+
+@media(max-width:890px) {
+	.portfolio__button {
+		width: 100px;
+		height: 40px;
+		border-radius: 10px;
+		cursor: pointer;
+	}
 }
 
 .sim {
@@ -81,7 +95,15 @@
 	}
 
 	.portfolio__sites{
-		display: grid;
-		grid-template-columns: none;
+		overflow-x: scroll;
+	
+	}
+	.portfolio__sites::-webkit-scrollbar-thumb{
+		width: 4px;
+		background-color: rgb(113, 116, 132, 0.3);
+		border-radius: 4px;
+	}
+	.portfolio__sites::-webkit-scrollbar {
+		width: 4px;
 	}
 }
