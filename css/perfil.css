@@ -1,0 +1,50 @@
+.perfil {
+	background-color: #262d37;
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
+.perfil__foto {
+	width: 250px;
+	border-radius: 60%;
+}
+
+.perfil__secao {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.perfil__texto a {
+	color: white
+}
+
+.perfil__texto {
+	background-color: #4F4792;
+	width: 70%;
+	height: auto;
+	padding: 20px;
+	margin-top: 40px;
+	font-size: 1.3em;
+	color: white;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
+	text-align: justify;
+	border-radius: 20px;
+	size: 0,5em;
+	position: relative;
+}
+
+.perfil__texto:after{ /*Triangulo*/
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+    /*Aqui entra a cor da "aba" do balão */
+    border-bottom: 20px solid #4F4792;
+    top: -20px; /*localização. Experimente alterar para 'bottom'*/
+    left: 46%;
+}

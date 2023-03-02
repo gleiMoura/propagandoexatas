@@ -1,7 +1,11 @@
 .apresentacao {
-	background-color: #21272F;
+	background-color: transparent;
 	padding-top: 20px;
 	height: auto;
+	background-image: linear-gradient(to bottom, #262d37,transparent, #262d37), url("/images/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .apresentacao__secao {
