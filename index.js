@@ -69,19 +69,12 @@ const clickDay = (day, livre, hour) => {
         return
     } else {
         confirm_order.classList.remove("confirm_order_none");
+        confirm_order_sim.href = "https://wa.me/+5521998199049?text=" + encodeURIComponent(message);
     }
-
-    return message;
 }
 
 const fechaOrder = () => {
     confirm_order.classList.add("confirm_order_none")
-}
-
-const enviarOrder = () => {
-    const message = clickDay();
-    console.log(message)
-    confirm_order_sim.href = "https://wa.me/+5521998199049?text=" + encodeURIComponent(message);
 }
 
 const verigicaIntervaloDeTrabalho = (lowerLimit, upperLimit, number) => {
