@@ -101,6 +101,8 @@ td {
 	padding: 8px;
 	text-align: center;
 	color: white;
+	width: 100px;
+	height: auto;
 }
 
 th {
@@ -111,6 +113,3 @@ tr {
 	background-color: #000;
 }
 
-.nao {
-	background-color: #c93939;
-}

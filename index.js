@@ -1,7 +1,7 @@
 const createTable = () => {
     const table = document.querySelector('.table');
     const diasDaSemana = [
-        'segunda',
+        'Segunda',
         'Terça',
         'Quarta',
         'Quinta',
@@ -12,22 +12,27 @@ const createTable = () => {
     let headerTable = "";
     let bodyTable = "";
     let body = "";
-    let livre = 'sim'
 
     for (let k = 0; k < diasDaSemana.length; k++) {
         headerTable += `<th>${diasDaSemana[k]}</th>`
     }
 
     for (let j = 7; j < 23; j++) {
+        let livre = 'sim'
         for (let i = 0; i < diasDaSemana.length; i++) {
-            if(
-                diasDaSemana[i] === 'segunda' ||
-                diasDaSemana[i] === 'terça' ||
-                diasDaSemana[i] === 'quinta'
+            if (
+                ((diasDaSemana[i] === 'Segunda' ||
+                    diasDaSemana[i] === 'Terça' ||
+                    diasDaSemana[i] === 'Quinta')
+                    && verigicaIntervaloDeTrabalho(10, 19, j)) ||
+                ((diasDaSemana[i] === 'Quarta' ||
+                    diasDaSemana[i] === 'Sexta')
+                    && verigicaIntervaloDeTrabalho(7, 21, j))
             ) {
-                livre = verigicaIntervaloDeTrabalho(j);
+                livre = 'nao'
+            } else {
+                livre = 'sim'
             }
-
             bodyTable += `
                     <td>
                         <div class="portfolio__button ${livre}" onclick="clickDay('${diasDaSemana[i]}','${livre}',${j})"></div>
@@ -61,15 +66,11 @@ const clickDay = (day, livre, hour) => {
     alert(message);
 }
 
-const verigicaIntervaloDeTrabalho = (intervalo) => {
-    const number = intervalo;
-    const lowerLimit = 10;
-    const upperLimit = 19;
-
+const verigicaIntervaloDeTrabalho = (lowerLimit, upperLimit, number) => {
     if (number >= lowerLimit && number <= upperLimit) {
-        return 'nao'
+        return true
     } else {
-        return 'sim'
+        return false
     }
 }
 
