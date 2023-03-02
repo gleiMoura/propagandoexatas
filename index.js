@@ -1,3 +1,6 @@
+const confirm_order = document.querySelector(".confirm_order");
+const confirm_order_sim = document.querySelector(".confirm_order_sim");
+
 const createTable = () => {
     const table = document.querySelector('.table');
     const diasDaSemana = [
@@ -35,7 +38,8 @@ const createTable = () => {
             }
             bodyTable += `
                     <td>
-                        <div class="portfolio__button ${livre}" onclick="clickDay('${diasDaSemana[i]}','${livre}',${j})"></div>
+                        <div class="portfolio__button ${livre}" onclick="clickDay('${diasDaSemana[i]}','${livre}',${j})">
+                        </div>
                     </td>
             `
         }
@@ -54,16 +58,29 @@ const createTable = () => {
         </tr>
         ${body}
     </table>`;
-
-    console.log(table.innerHTML)
 }
 
 const clickDay = (day, livre, hour) => {
     let message = `Eu gostaria de marcar uma aula para a(o) ${day} no horário de ${hour}h:00min`;
     if (livre === "nao") {
         message = 'Não temos aula disponível para esse horário'
+        alert(message)
+        return
+    } else {
+        confirm_order.classList.remove("confirm_order_none");
     }
-    alert(message);
+
+    return message;
+}
+
+const fechaOrder = () => {
+    confirm_order.classList.add("confirm_order_none")
+}
+
+const enviarOrder = () => {
+    const message = clickDay();
+    console.log(message)
+    confirm_order_sim.href = "https://wa.me/+5521998199049?text=" + encodeURIComponent(message);
 }
 
 const verigicaIntervaloDeTrabalho = (lowerLimit, upperLimit, number) => {

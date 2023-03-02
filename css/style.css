@@ -113,3 +113,40 @@ tr {
 	background-color: #000;
 }
 
+.confirm_order{
+    width: 300px;
+    height: 100px;
+	padding: 10px;
+    background-color: #348263;
+	color: white;
+    position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    z-index: 3;
+    border-radius: 20px;
+	box-shadow: 5px 5px 5px #000;
+	left: calc(45% - 50px);
+
+}
+.confirm_order_buttons {
+	display: flex;
+}
+.confirm_order_buttons div {
+	margin: 20px;
+	background-color: black;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.confirm_order_buttons div a {
+	color: white;
+	text-decoration: none;
+}
+
+.confirm_order_none{
+    display: none;
+}
+
