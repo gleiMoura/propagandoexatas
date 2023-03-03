@@ -1,11 +1,31 @@
 .apresentacao {
-	background-color: transparent;
-	padding-top: 20px;
 	height: auto;
-	background-image: linear-gradient(to bottom, #262d37,transparent, #262d37), url(../images/background.jpg);
+	padding-top: 20px;
+	z-index: 3;
+	position: relative;
+}
+
+.apresentacao__background_image {
+	background-image: linear-gradient(to bottom, #262d37, transparent, #262d37), url(../images/background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.apresentacao__background_color {
+	background-color: #262d37;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -2;
 }
 
 .apresentacao__secao {
@@ -58,11 +78,11 @@
 	}
 
 	.apresentacao__secao {
-		width:90%;
+		width: 90%;
 		display: flex;
 		flex-direction: column;
 	}
-	
+
 	.apresentacao__foto {
 		width: 200px;
 		height: 200px;
