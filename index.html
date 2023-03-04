@@ -16,20 +16,34 @@
 
 <body>
 	<nav>
-		<h3><a href="#caminho">SERVIÇOS</a></h3>
-		<h3><a href="#portfolio">HORÁRIOS</a></h3>
+		<h3 class="portugues"><a href="#caminho">SERVIÇOS</a></h3>
+		<h3 class="ingles none"><a href="#caminho">SERVICES</a></h3>
+		<h3 class="botaoLingua" onclick="changeLanguage()">
+			<img class="portugues" src="./images/estados-unidos.png" />
+			<img class="ingles none" src="./images/brasil.png" />
+
+		</h3>
+		<h3 class="portugues"><a href="#portfolio">HORÁRIOS</a></h3>
+		<h3 class="ingles none"><a href="#portfolio">SCHEDULE</a></h3>
 	</nav>
 
 	<div class="confirm_order confirm_order_none">
-		<p>Enviar pedido de aula por whatsapp</p>
+		<p class="portugues">Enviar pedido de aula por whatsapp</p>
+		<p class="ingles none">Send ask by whatsapp!</p>
 		<div class="confirm_order_buttons">
 			<div onclick="enviarOrder()">
-				<a class="confirm_order_sim" target="_blank">
+				<a class="confirm_order_sim portugues" target="_blank">
 					sim
 				</a>
+				<a class="confirm_order_sim ingles none" target="_blank">
+					yes
+				</a>
 			</div>
-			<div onclick="fechaOrder()">
+			<div onclick="fechaOrder()" class="portugues">
 				não
+			</div>
+			<div onclick="fechaOrder()" class="ingles none">
+				no
 			</div>
 		</div>
 	</div>
@@ -39,24 +53,36 @@
 		<div id="apresentacao" class="apresentacao">
 			<div class="apresentacao__background_image"></div>
 			<div class="apresentacao__background_color"></div>
-			<h1>PROPAGANDO EXATAS</h1>
+			<h1 class="portugues">PROPAGANDO EXATAS</h1>
+			<h1 class="ingles none">PROMOTING EXACT SCIENCES</h1>
+
+
 			<div class="apresentacao__secao">
 				<a href="https://www.instagram.com/prof.gleisonmoura/" target="_blank"><img src="images/logo.png"
 						class="apresentacao__foto"></a>
 				<div class="apresentacao__textos">
 					<article class="apresentacao__texto">
-						<p>
+						<p class="portugues">
 							Aprenda onde quiser, quando quiser.
 						</p>
-					</article>
-					<article class="apresentacao__texto">
-						<p>
-							Transforme seus sonhos em realidade com nossas aulas online personalizadas.
+						<p class="ingles none">
+							Learn anywhere, anytime.
 						</p>
 					</article>
 					<article class="apresentacao__texto">
-						<p>
+						<p class="portugues">
+							Transforme seus sonhos em realidade com nossas aulas online personalizadas.
+						</p>
+						<p class="ingles none">
+							Make your dreams come true with our personalized online classes.
+						</p>
+					</article>
+					<article class="apresentacao__texto">
+						<p class="portugues">
 							Desenvolva novas habilidades e alcance seu potencial máximo
+						</p>
+						<p class="ingles none">
+							Develop new skills and reach your maximum potential.
 						</p>
 					</article>
 				</div>
@@ -64,37 +90,55 @@
 		</div>
 
 		<div id="caminho" class="caminho">
-			<h1>DO QUE VOCÊ PRECISA?</h1>
+			<h1 class="portugues">DO QUE VOCÊ PRECISA?</h1>
+			<h1 class="ingles none">WHAT DO YOU NEED?</h1>
 			<div class="caminho__grid">
 				<section class="caminho__conteudo">
-					<h2>Física e Matemática</h2>
+					<h2 class="portugues">Física e Matemática</h2>
+					<h2 class="ingles none">Physics and Mathematics</h2>
 					<br>
-					<p class="caminho__texto">
+					<p class="caminho__texto portugues um">
 						Você está com dificuldades em física e matemática? Não se preocupe! Nós temos a solução para
 						você. Oferecemos aulas personalizadas e eficazes em física e matemática, ministradas por
 						professores altamente qualificados e experientes.
+					</p>
+					<p class="caminho__texto ingles none">
+						Are you having difficulties in physics and mathematics? Don't worry! We have the solution for
+						you. We offer personalized and effective classes in physics and mathematics, taught by highly
+						qualified and experienced teachers.
 					</p>
 					<a href="http://www.fnde.gov.br/component/k2/item/4082-f%C3%ADsica#:~:text=F%C3%ADsica%20(do%20grego%20antigo%3A%20%CF%86%CF%8D%CF%83%CE%B9%CF%82,em%20seus%20aspectos%20mais%20gerais.&text=%C3%89%20considerada%20a%20ci%C3%AAncia%20fundamental,biologia%2C%20t%C3%AAm%20ra%C3%ADzes%20na%20f%C3%ADsica."
 						target="_blank"><img src="images/phisics.jpg " alt="O que é Física?"></a>
 				</section>
 
 				<section class="caminho__conteudo">
-					<h2>Aulas de Robótica</h2>
+					<h2 class="portugues">Aulas de Robótica</h2>
+					<h2 class="ingles none">Robotics Classes</h2>
 					<br>
-					<p class="caminho__texto">Para atender às necessidades e preferências de diferentes estudantes,
+					<p class="caminho__texto portugues">
+						Para atender às necessidades e preferências de diferentes estudantes,
 						nosso curso de robótica pode ser feito tanto online quanto presencial. Nas aulas presenciais,
 						utilizamos um kit de robótica, que permite que os alunos tenham contato com os componentes e
 						equipamentos reais usados na construção de robôs. Já nas aulas online, utilizamos o laboratório
 						virtual Tinkercad.
+					</p>
+					<p class="caminho__texto ingles none">
+						To meet the needs and preferences of different students,
+						our robotics course can be taken both online and in person. In face-to-face classes,
+						we use a robotics kit, which allows students to have contact with the components and
+						real equipment used in building robots. In online classes, we use the Tinkercad virtual
+						laboratory.
 					</p>
 					<a href="https://www.portaldaindustria.com.br/industria-de-a-z/robotica/" target="_blank"><img
 							src="images/litleRobot.jpg" alt="O que é Robótica?"></a>
 				</section>
 
 				<section class="caminho__conteudo">
-					<h2>Aulas de Programação</h2>
+					<h2 class="portugues">Aulas de Programação</h2>
+					<h2 class="ingles none">Programming Lessons</h2>
+
 					<br>
-					<p class="caminho__texto">
+					<p class="caminho__texto portugues">
 						Você está interessado em aprender programação, mas não sabe por onde começar? Ou talvez você já
 						tenha começado a estudar, mas está enfrentando dificuldades e precisa de ajuda? Não se preocupe,
 						estamos aqui para ajudar!
@@ -102,13 +146,22 @@
 						ampla variedade de assuntos, incluindo JavaScript, PostgreSQL, NoSQL, MongoDB, SQL,
 						TypeScript e React.js.
 					</p>
+					<p class="caminho__texto ingles none">
+						Are you interested in learning programming but don't know where to start? Or perhaps you've
+						already started studying but are facing difficulties and need some help? Don't worry, we're here
+						to assist you!
+						We offer private programming lessons in a wide variety of subjects, including JavaScript,
+						PostgreSQL, NoSQL, MongoDB, SQL, TypeScript, and React.js.
+					</p>
 					<a href="https://idocode.com.br/blog/programacao/o-que-e-programacao/" target="_blanch"><img
 							src="images/program.jpg" alt="O que é Programação?"></a>
 				</section>
 			</div>
 		</div>
 		<div id="portfolio" class="portfolio">
-			<h1>AGENDE SUA AULA!</h1>
+			<h1 class="portugues">AGENDE SUA AULA!</h1>
+			<h1 class="ingles none">SCHEDULE YOUR LESSON!</h1>
+
 			<div class="portfolio__sites">
 				<div class="table">
 				</div>
@@ -116,20 +169,28 @@
 		</div>
 
 		<div id="perfil" class="perfil">
-			<h1>QUEM SOU EU</h1>
+			<h1 class="portugues">QUEM SOU EU</h1>
+			<h1 class="ingles none">WHO I AM?</h1>
 			<div class="perfil__secao">
 				<a href="https://www.linkedin.com/in/gleison-moura-794793220/" target="_blank"><img
 						src="images/gleison.jpg" class="perfil__foto"></a>
 				<article class="perfil__texto">
-						<p>
-							"Olá, eu sou um professor de física e matemática com mais de 4 anos de experiência em ensinar
-							estudantes de todos os níveis. Acredito que o ensino é uma paixão e uma oportunidade para
-							mudar
-							vidas. Com a minha abordagem inovadora e entusiasmada, juntamente com minha paixão pelas
-							ciências, tenho ajudado meus alunos a alcançar sucesso e a desenvolver uma paixão por
-							aprender.
-							Estou animado para continuar essa jornada e impactar positivamente a vida dos estudantes."
-						</p>
+					<p class="portugues">
+						"Olá, eu sou um professor de física e matemática com mais de 4 anos de experiência em ensinar
+						estudantes de todos os níveis. Acredito que o ensino é uma paixão e uma oportunidade para
+						mudar
+						vidas. Com a minha abordagem inovadora e entusiasmada, juntamente com minha paixão pelas
+						ciências, tenho ajudado meus alunos a alcançar sucesso e a desenvolver uma paixão por
+						aprender.
+						Estou animado para continuar essa jornada e impactar positivamente a vida dos estudantes."
+					</p>
+					<p class="ingles none">
+						"Hello, I am a physics and mathematics teacher with over 4 years of experience teaching students
+						of all levels. I believe that teaching is a passion and an opportunity to change lives. With my
+						innovative and enthusiastic approach, coupled with my passion for science, I have helped my
+						students achieve success and develop a passion for learning.
+						I am excited to continue this journey and positively impact the lives of students."
+					</p>
 					<br>
 				</article>
 			</div>
@@ -137,7 +198,8 @@
 
 		<footer>
 			<div class="foot">
-				<p>Feito com amor S2 por Gleison.</p>
+				<p class="portugues">Feito com amor S2 por Gleison.</p>
+				<p class="ingles none">This was made with love by Gleison</p>
 			</div>
 		</footer>
 	</main>

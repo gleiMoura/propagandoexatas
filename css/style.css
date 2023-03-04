@@ -28,6 +28,7 @@ nav {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
+	position: relative;
 }
 
 nav ul {
@@ -171,4 +172,36 @@ tr {
 
 .confirm_order_none {
 	display: none;
+}
+
+.botaoLingua {
+	background-color: transparent;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+@media(max-width:580px) {
+	.botaoLingua {
+		position: absolute;
+		right: 20px;
+	}
+}
+
+.botaoLingua img {
+	width: 20px
+}
+
+.none {
+	display: none;
+}
+
+.ingles {
+	z-index: 2;
+}
+
+.portugues {
+	z-index: 1;
 }
