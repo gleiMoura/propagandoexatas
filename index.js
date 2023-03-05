@@ -108,7 +108,7 @@ const clickDay = (day, livre, hour) => {
     if (livre === "nao") {
         if (ingles[0].classList.contains("none")) {
             message = 'Não temos aula disponível para esse horário'
-        } else{
+        } else {
             message = "we don't have classes for that time";
             alert(message);
             return;
